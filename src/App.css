@@ -1,3 +1,7 @@
+.div-nav{
+  border-bottom: 1px solid black;
+}
+
 .navegation {
   display: flex;
   justify-content: space-around;
@@ -12,4 +16,9 @@
   text-decoration: none;
   color: black;
   font-size: 25px;
+}
+
+.items-nav:hover {
+  border-bottom: 1px solid black;
+  color: gray;
 }

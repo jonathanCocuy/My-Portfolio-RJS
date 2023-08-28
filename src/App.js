@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="div-nav">
         <ul className="navegation">
           <li className="list-nav">
             <Link to="/about" className="items-nav">Acerca de mí</Link>
