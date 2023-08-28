@@ -1,0 +1,15 @@
+.navegation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.list-nav {
+  list-style: none;
+}
+
+.items-nav {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+}
