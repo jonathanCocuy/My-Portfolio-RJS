@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import About from "./Components/Navbar/About/About";
-import Projects from "./Components/Navbar/Projects/Projects";
+import About from "./Components/Main/About/About";
+import Projects from "./Components/Main/Projects/Projects";
 import "./App.css";
 
 /* Barra de navegación */
