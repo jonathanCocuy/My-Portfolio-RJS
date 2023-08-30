@@ -1,5 +1,10 @@
+/* Barra de navegación */
 .div-nav{
   border-bottom: 1px solid black;
+  padding-top:5px ;
+  background-color: #101630;
+  position: sticky;
+  top: 0;
 }
 
 .navegation {
@@ -14,11 +19,20 @@
 
 .items-nav {
   text-decoration: none;
-  color: black;
+  color: #CBCBD2;
   font-size: 25px;
 }
 
 .items-nav:hover {
-  border-bottom: 1px solid black;
-  color: gray;
+  border-bottom: 1px solid #5EDAFF;
+  color: #5EDAFF;
+}
+
+.items-nav:focus {
+  border-bottom: 2px solid #2ea1c4;
+  color: #5EDAFF;
+}
+
+.elements-routes {
+  display: flex;
 }
