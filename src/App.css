@@ -5,12 +5,14 @@
   background-color: #101630;
   position: sticky;
   top: 0;
+  display: flex;
+  justify-content: space-around;
 }
 
 .navegation {
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  gap: 50px;
 }
 
 .list-nav {
@@ -24,15 +26,34 @@
 }
 
 .items-nav:hover {
-  border-bottom: 1px solid #5EDAFF;
+  border-bottom: 2px solid #5EDAFF;
   color: #5EDAFF;
 }
 
 .items-nav:focus {
   border-bottom: 2px solid #2ea1c4;
-  color: #5EDAFF;
+  color: #0799c5;
+}
+
+.items-nav:active {
+  border-bottom: 2px solid #2ea1c4;
+  color: #0799c5;
+}
+
+#contact-item {
+  padding: 10px;
+  background: #0799c5;
+  border-radius: 10px;
+}
+
+#contact-item:hover {
+  background: #066581;
 }
 
 .elements-routes {
   display: flex;
+}
+
+.img {
+  width: 60px;
 }

@@ -5,7 +5,7 @@ import About from "./Components/Main/About/About";
 import Projects from "./Components/Main/Projects/Projects";
 import Experience from "./Components/Main/Experience/Experience";
 import Contact from "./Components/Main/Contact/Contact";
-import "./Images/Logo-JC.png"
+import LogoImage from "./logo.png";
 import "./App.css";
 
 /* Barra de navegación */
@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <div className="div-nav">
-      <Link hrefLang="./Images/Logo-JC.png"></Link>
+        <img className="img" src={LogoImage}></img>
         <ul className="navegation">
           <li className="list-nav">
             <Link to="/home" className="items-nav">
@@ -35,7 +35,7 @@ function App() {
               Experiencia
             </Link>
           </li>
-          <li className="list-nav">
+          <li className="list-nav" id="contact-item">
             <Link to="/contacto" className="items-nav">
               Contacto
             </Link>
@@ -51,7 +51,6 @@ function App() {
         <Route path="/contacto" element={<Contact />} />
       </Routes>
     </Router>
-
   );
 }
 
