@@ -1,10 +1,13 @@
 import React from "react";
+import "./StyleHome.css";
 
 function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-      <p></p>
+    <div className="div-home">
+      <h1 className="title-developer">
+        DESARROLLADOR DE <br />
+        <span>SOFTWARE</span> <span className="span-frontend">FRONT-END</span>
+      </h1>
     </div>
   );
 }

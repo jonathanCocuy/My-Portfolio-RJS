@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+.div-home {
+    font-family: Russo One;
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    padding-top: 90px;
+    padding-left: 100px;
+    transition: 1s 2;
+}
+
+.span-i-am {
+    color: gray;
+    font-size: 30px;
+}
+
+.title-developer {
+    color: white;
+}
+
+.span-frontend {
+    color: #0799c5;
+}

@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Questrial&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   font-family: Questrial;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #101630;
 }
 
 code {

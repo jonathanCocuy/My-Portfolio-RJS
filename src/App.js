@@ -11,12 +11,16 @@ import "./App.css";
 /* Barra de navegación */
 function App() {
   return (
+    <div className="App">
+
+    
+
     <Router>
       <div className="div-nav">
-        <img className="img" src={LogoImage}></img>
+        <img className="img" src={LogoImage} alt="Logo Jonathan Cocuy"></img>
         <ul className="navegation">
           <li className="list-nav">
-            <Link to="/home" className="items-nav">
+            <Link to="/" className="items-nav">
               Home
             </Link>
           </li>
@@ -35,8 +39,8 @@ function App() {
               Experiencia
             </Link>
           </li>
-          <li className="list-nav" id="contact-item">
-            <Link to="/contacto" className="items-nav">
+          <li className="list-nav" >
+            <Link to="/contacto"   id="contact-item">
               Contacto
             </Link>
           </li>
@@ -44,13 +48,14 @@ function App() {
       </div>
 
       <Routes className="elements-routes">
-        <Route path="/home" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/proyectos" element={<Projects />} />
         <Route path="/experience" element={<Experience />} />
         <Route path="/contacto" element={<Contact />} />
       </Routes>
     </Router>
+    </div>
   );
 }
 

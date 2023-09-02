@@ -1,12 +1,15 @@
 /* Barra de navegación */
+.img {
+  width: 120px;
+}
+
 .div-nav{
-  border-bottom: 1px solid black;
-  padding-top:5px ;
+  padding: 20px 0 20px 0 ;
+  display: flex;
+  justify-content: space-around;
   background-color: #101630;
   position: sticky;
   top: 0;
-  display: flex;
-  justify-content: space-around;
 }
 
 .navegation {
@@ -44,16 +47,20 @@
   padding: 10px;
   background: #0799c5;
   border-radius: 10px;
+  font-size: 25px;
+  text-decoration: none;
+  color: #101630;
 }
 
 #contact-item:hover {
   background: #066581;
+  color:#CBCBD2;
+}
+
+#contact-item:focus {
+  background: #02495f;
 }
 
 .elements-routes {
   display: flex;
-}
-
-.img {
-  width: 60px;
 }
