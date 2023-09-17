@@ -1,0 +1,31 @@
+.container-principal {
+    padding-top: 50px ;
+    color: white;
+}
+
+.container-about{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-text {
+    width: 50%;
+}
+
+.image-about {
+    width: 300px;
+    border: 10px solid #4FB7DC;
+    border-radius: 10px ;
+}
+
+.title-about {
+    font-size: 50px;
+}
+
+.paragraph-about {
+    padding-top: 30px;
+    font-size: 25px;
+    color: lightgray;
+    line-height: 1.3;
+}
+

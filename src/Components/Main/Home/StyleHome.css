@@ -7,7 +7,7 @@
     font-size: 40px;
     padding-top: 90px;
     padding-left: 100px;
-    transition: 1s 2;
+    animation: dispel 1s ease-in;
 }
 
 .span-i-am {
@@ -21,4 +21,14 @@
 
 .span-frontend {
     color: #0799c5;
+    animation: dispel 2s ease-in;
 }
+
+@keyframes dispel {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
