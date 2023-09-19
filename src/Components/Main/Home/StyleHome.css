@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url(../../Styles/animations.css);
 
 .div-home {
     font-family: Russo One;
@@ -23,12 +24,3 @@
     color: #0799c5;
     animation: dispel 2s ease-in;
 }
-
-@keyframes dispel {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
