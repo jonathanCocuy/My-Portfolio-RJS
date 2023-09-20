@@ -2,68 +2,68 @@ import React, { useState } from "react";
 import "./StyleContact.css";
 
 const Contact = () => {
-  const InitialForm = {
-    name: "",
-    email: "",
-    message: "",
+  const InitialState = {
+    email: "jonathancp145@gmail.com",
+    subject: "",
+    body: "",
   };
+  const [formData, setFormData] = useState(InitialState);
 
-  const [formContact, setformContact] = useState(InitialForm);
-
-  const ChangeContact = (e) => {
+  const handleChange = (e) => {
     const { name, value } = e.target;
-    setformContact({
-      ...formContact,
+    setFormData({
+      ...formData,
       [name]: value,
     });
   };
 
-  const Change = (e) => {
+  const SendEmail = (e) => {
     e.preventDefault();
-    console.log("Formulario Enviado", formContact);
-    alert("Formulario Enviado");
-    setformContact(InitialForm);
+    const mailtoLink = `mailto:${formData.email}?subject=${encodeURIComponent(
+      formData.subject
+    )}&body=${encodeURIComponent(formData.body)}`;
+    window.location.href = mailtoLink;
   };
 
   return (
     <main className="container-principal-contact">
       <div className="container-information">
-        <h1>Puedes enviarme un mensaje</h1>
+        <h1>Puedes contactarte conmigo:</h1>
         <p className="contact-paragraph"></p>
       </div>
-      <form onSubmit={Change} className="form-contact">
+      <form onSubmit={SendEmail} className="form-contact">
         <div className="container-contact">
           <div>
             <input
               className="input-contact"
               type="text"
-              id="name"
-              name="name"
-              value={formContact.name}
-              onChange={ChangeContact}
-              placeholder="Nombre"
+              id="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              placeholder="Email"
               required
             />
           </div>
           <div>
             <input
               className="input-contact"
-              type="email"
-              id="email"
-              name="email"
-              value={formContact.email}
-              onChange={ChangeContact}
-              placeholder="Correo electrónico"
+              type="text"
+              id="subject"
+              name="subject"
+              value={formData.subject}
+              onChange={handleChange}
+              placeholder="Asunto"
               required
             />
           </div>
           <div>
             <textarea
               className="textarea-contact"
-              id="message"
-              name="message"
-              value={formContact.message}
-              onChange={ChangeContact}
+              id="body"
+              name="body"
+              value={formData.body}
+              onChange={handleChange}
               placeholder="Mensaje"
               required
             />

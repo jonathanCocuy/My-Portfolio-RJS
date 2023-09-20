@@ -17,6 +17,7 @@ import "./App.css";
 
 /* Barra de navegación */
 function App() {
+
   return (
     <div className="App">
       <Router>
