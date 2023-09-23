@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Questrial&display=swap");
 
+@import url(../../Styles/animations.css);
+
 body {
   font-family: Questrial;
 }
@@ -9,20 +11,20 @@ body {
 }
 
 .container-two-forms {
-  padding-top: 50px;
+  padding-top: 20px;
   display: flex;
   justify-content: space-around;
 }
 
 .form-contact {
   width: 400px;
-  height: 350px;
+  height: 400px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background: linear-gradient(65deg, #50AADA, #4C3CC5);
+  background: linear-gradient(100deg, #4C3CC5, #50AADA);
 }
 
 .form-contact:hover {
@@ -35,6 +37,10 @@ body {
   flex-direction: column;
   gap: 10px;
   align-items: center;
+}
+
+.img-form {
+  animation: zoomForm 2s infinite linear;
 }
 
 .input-contact {
@@ -77,9 +83,53 @@ body {
     border-radius: 5px;
     border: none;
     background: #4D7DD1;
+    box-shadow: 0 0 10px 0px black;
+    font-weight: bold;
 }
 
 .container-whatsapp {
-  border: 1px solid #ccc;
   width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(100deg, #075E54, #25D366);
+
+}
+
+.container-whatsapp-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.img-whatsapp {
+  animation: zoomWhatsApp 2s infinite linear;
+}
+
+.textarea-whatsapp {
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  background: #DCF8C6;
+  font-family: Questrial;
+  padding: 10px;
+  font-size: 14px;
+  color: #c6c8ce;
+  resize: none;
+  outline: none;
+}
+
+.button-whatsapp {
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  background: #128C7E;
+  box-shadow: 0 0 10px 0px black;
+  font-weight: bold;
 }

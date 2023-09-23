@@ -24,3 +24,40 @@
         transform: translateX(0);
     }
  }
+
+ @keyframes zoomWhatsApp {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #128C7E;
+    border: none;
+    border-radius: 100%;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #074d44;
+    border-radius: 100%;
+    border: none;
+  }
+
+}
+
+@keyframes zoomForm {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 1px #3223dd;
+    border: none;
+    border-radius: 100%;
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #4C41C6;
+    border-radius: 100%;
+    border: none;
+  }
+  100%{
+    transform: scale(1);
+    box-shadow: 0 0 1px #4C41C6;
+    border-radius: 100%;
+    border: none;
+  }
+}
