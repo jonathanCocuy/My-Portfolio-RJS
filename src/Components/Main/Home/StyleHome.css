@@ -1,26 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 @import url(../../Styles/animations.css);
 
+.img-home {
+  display: none;
+}
+
 .div-home {
-    font-family: 'Russo One', sans-serif !important;
-    display: flex;
-    flex-direction: column;
-    font-size: 40px;
-    padding-top: 90px;
-    padding-left: 100px;
-    animation: dispel 1s ease-in;
+  font-family: "Russo One", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 40px;
+  padding-top: 100px;
+  justify-content: center;
+  align-items: center;
+  animation: dispel 1s ease-in;
+  z-index: 1;
 }
 
 .span-i-am {
-    color: gray;
-    font-size: 30px;
+  color: gray;
+  font-size: 30px;
 }
 
 .title-developer {
-    color: white;
+  color: white;
 }
 
 .span-frontend {
-    color: #0799c5;
-    animation: dispel 2s ease-in;
+  color: #0799c5;
+  animation: dispel 2s ease-in;
+  z-index: 1000;
+}
+
+@media (max-width: 500px) {
+  .img-home {
+    display: block;
+    width: 120px;
+    border-radius: 100%;
+    border: 5px solid white;
+  }
+
+  .div-home {
+    width: 100%;
+    font-size: 15px;
+    gap: 50px;
+
+  }
 }

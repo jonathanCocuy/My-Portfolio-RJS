@@ -1,15 +1,42 @@
+@import url(./Components/Styles/animations.css);
+
 /* Barra de navegación */
 .img {
   width: 120px;
 }
 
-.div-nav{
-  padding: 20px 0 20px 0 ;
+.div-nav {
+  padding: 20px 0 20px 0;
   display: flex;
   justify-content: space-around;
-  background-color: #101630;
   position: sticky;
   top: 0;
+  background: #101630;
+}
+
+.toggle-button {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  font-size: 40px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  display: none;
+}
+
+.close-button {
+  font-size: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+
 }
 
 .navegation {
@@ -24,18 +51,13 @@
 
 .items-nav {
   text-decoration: none;
-  color: #CBCBD2;
+  color: #cbcbd2;
   font-size: 25px;
 }
 
 .items-nav:hover {
-  border-bottom: 2px solid #5EDAFF;
-  color: #5EDAFF;
-}
-
-.items-nav:focus {
-  border-bottom: 2px solid #2ea1c4;
-  color: #0799c5;
+  border-bottom: 2px solid #5edaff;
+  color: #5edaff;
 }
 
 .items-nav:active {
@@ -54,13 +76,73 @@
 
 #contact-item:hover {
   background: #066581;
-  color:#CBCBD2;
-}
-
-#contact-item:focus {
-  background: #02495f;
+  color: #cbcbd2;
 }
 
 .elements-routes {
   display: flex;
+}
+
+@media (max-width: 500px) {
+  .img {
+    border-radius: 100%;
+    border: 5px solid rgb(0, 0, 0);
+    background: white;
+    animation: zoomImg 3s ease-in infinite ;
+  }
+  .div-nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: #0760c5;
+    overflow-x: hidden;
+    transition: 0.3s;
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .navegation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+  }
+
+  .list-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .items-nav {
+    width: 100%;
+  }
+
+  .div-nav.open {
+    left: 0;
+  }
+
+  .div-nav.close {
+    left: -300;
+  }
+
+  .toggle-button {
+    display: block;
+  }
+
+  .toggle-button:hover {
+    color: gray;
+  }
+
+  .toggle-button:active {
+    color: #02495f;
+  }
+
+  .close-button {
+    display: block;
+  }
 }

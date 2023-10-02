@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./StyleContact.css";
+import sweetAlert from "sweetalert";
 
 const Contact = () => {
   const InitialState = {
@@ -38,17 +39,22 @@ const Contact = () => {
   const WhatsApp = () => {
     const MessageInput = encodeURIComponent(WhatsAppMessage);
 
+    if (WhatsAppMessage.trim() === '') {
+      sweetAlert("Oops...", "Debes completar el campo", "error");
+            return;
+    }
     const WhatsAppLink = `https://api.whatsapp.com/send?phone=3058754602&text=${MessageInput}`;
     window.open(WhatsAppLink, "_blank");
+    setWhatsAppMessage("");
   };
 
   return (
     <main className="container-principal-contact">
-      <br />
+      <h3 className="title-contact">¿Deseas contactarte conmigo?</h3>
       <div className="container-two-forms">
         <form onSubmit={SendEmail} className="form-contact">
           <div className="container-contact">
-            <h1>Escribeme a mi Correo</h1>
+            <h1 className="write-title">Escribeme a mi Correo</h1>
             <img
             className="img-form"
               src="https://images.prismic.io/vtiger-website/1a36a136-5f88-4313-8dd4-a6fc2c397893_gmail+logo.png?auto=compress,format"
@@ -99,9 +105,9 @@ const Contact = () => {
           </div>
         </form>
 
-        <form className="container-whatsapp" onChange={WhatsApp}>
+        <div className="container-whatsapp" >
           <div className="container-whatsapp-input">
-            <h1>Escribeme a mi WhatsApp</h1>
+            <h1 className="write-title">Escribeme a mi WhatsApp</h1>
             <img
             className="img-whatsapp"
               src="https://www.joseivanaguilar.com/wp-content/uploads/2023/05/WhatsApp.svg_.png"
@@ -110,6 +116,7 @@ const Contact = () => {
             />
             <textarea
               className="textarea-whatsapp"
+              id="whatsApp"
               type="text"
               value={WhatsAppMessage}
               onChange={SendWhatsAppMsg}
@@ -118,9 +125,9 @@ const Contact = () => {
             />
           </div>
           <div>
-            <button type="submit" className="button-whatsapp">Enviar</button>
+            <button className="button-whatsapp" onClick={WhatsApp}>Enviar</button>
           </div>
-        </form>
+        </div>
       </div>
     </main>
   );

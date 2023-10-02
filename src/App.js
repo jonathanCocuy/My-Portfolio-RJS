@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -17,40 +17,55 @@ import "./App.css";
 
 /* Barra de navegación */
 function App() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const SideBar = () => {
+    const nav = document.querySelector('.div-nav');
+    nav.classList.toggle('open');
+    setIsNavOpen(!isNavOpen); 
+  };
+
+  const CloseAutoSB = () => {
+    const nav = document.querySelector('.div-nav');
+    nav.classList.remove('open');
+    setIsNavOpen(false); }
 
   return (
-    <div className="App">
+    <div>
       <Router>
+        <button className="toggle-button" onClick={SideBar}>
+          &#9776;
+        </button>
         <div className="div-nav">
           <img className="img" src={LogoImage} alt="Logo Jonathan Cocuy"></img>
           <ul className="navegation">
             <li className="list-nav">
-              <NavLink to="/" className="items-nav" end>
+              <NavLink to="/" className="items-nav" onClick={CloseAutoSB}>
                 Home
               </NavLink>
             </li>
             <li className="list-nav">
-              <NavLink to="/about" className="items-nav">
+              <NavLink to="/about" className="items-nav" onClick={CloseAutoSB}>
                 Acerca de mí
               </NavLink>
             </li>
             <li className="list-nav">
-              <NavLink to="/proyectos" className="items-nav">
+              <NavLink to="/proyectos" className="items-nav" onClick={CloseAutoSB}>
                 Proyectos
               </NavLink>
             </li>
             <li className="list-nav">
-              <NavLink to="/experience" className="items-nav">
+              <NavLink to="/experience" className="items-nav" onClick={CloseAutoSB}>
                 Experiencia
               </NavLink>
             </li>
             <li className="list-nav">
-              <NavLink to="/contacto" id="contact-item">
+              <NavLink to="/contacto" id="contact-item" onClick={CloseAutoSB}>
                 Contacto
               </NavLink>
               <Outlet />
             </li>
           </ul>
+          <button className="close-button" onClick={SideBar}>&times;</button>
         </div>
 
         <Routes className="elements-routes">

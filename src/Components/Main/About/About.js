@@ -6,9 +6,10 @@ function About() {
   return (
     <div className="container-principal">
       <div className="container-about">
+      <h3 className="title-about-responsive">Acerca de mí</h3>
         <img className="image-about" src={AboutImage} alt="Jonathan Cocuy"/>
         <div className="container-text">
-          <h3 className="title-about">Acerca de mí</h3>
+          <h3 className="title-about-principal">Acerca de mí</h3>
           <p className="paragraph-about">
             ¡Hola! Soy Jonathan Cocuy, tengo 21 años y soy un apasionado
             desarrollador frontend con experiencia en GitHub, Angular,
