@@ -22,14 +22,14 @@
   animation: dispel 1s ease-in;
 }
 
-  .title-about-responsive {
-    font-size: 40px;
-    text-align: center;
-    animation: dispel 1s ease-in;
-    display: none;
-  }
+.title-about-responsive {
+  font-size: 40px;
+  text-align: center;
+  animation: dispel 1s ease-in;
+  display: none;
+}
 
- .title-about-principal {
+.title-about-principal {
   font-size: 40px;
   text-align: center;
   animation: dispel 1s ease-in;

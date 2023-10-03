@@ -11,48 +11,41 @@ import "./StyleExperience.css";
 
 const Experience = () => {
   return (
-    <main>
-      <h1>Experience</h1>
+    <main className="container-experience">
+      <h1 className="title-principal">Experiencia</h1>
+      <h2 className="subtitle-principal">Tecnologías que utilizo actualmente</h2>
       <div className="container-principal-experience">
         <section>
-          <img src={HTMLIcon} width={130} alt="HTML"></img>
+          <img src={HTMLIcon} width={100} alt="HTML"></img>
           <h3 className="title">HTML</h3>
-          <p>Lorem</p>
         </section>
         <section>
-          <img src={CSSIcon} width={130} alt="CSS"></img>
+          <img src={CSSIcon} width={100} alt="CSS"></img>
           <h3 className="title">CSS</h3>
-          <p>Lorem</p>
         </section>
         <section>
-          <img src={JSIcon} width={130} alt="JavaScript"></img>
+          <img src={JSIcon} width={100} alt="JavaScript"></img>
           <h3 className="title">JavaScript</h3>
-          <p>Lorem</p>
         </section>
         <section>
-          <img src={TSIcon} width={130} alt="TypeScript"></img>
+          <img src={TSIcon} width={100} alt="TypeScript"></img>
           <h3 className="title">TypeScript</h3>
-          <p>Lorem</p>
         </section>
         <section>
-          <img src={SQLIcon} width={130} alt="SQL Server"></img>
+          <img src={SQLIcon} width={100} alt="SQL Server"></img>
           <h3 className="title">SQL Server</h3>
-          <p>Lorem</p>
         </section>
         <section>
-          <img src={GitHubIcon} width={130} alt="GitHub"></img>
+          <img src={GitHubIcon} width={100} alt="GitHub"></img>
           <h3 className="title">GitHub</h3>
-          <p>Lorem</p>
         </section>
         <section>
-          <img src={AngularIcon} width={130} alt="Angular"></img>
+          <img src={AngularIcon} width={100} alt="Angular"></img>
           <h3 className="title">Angular</h3>
-          <p>Lorem</p>
         </section>
         <section>
-          <img src={ReactIcon} width={130} alt="React"></img>
+          <img src={ReactIcon} width={100} alt="React"></img>
           <h3 className="title">React JS</h3>
-          <p>Lorem</p>
         </section>
       </div>
     </main>
