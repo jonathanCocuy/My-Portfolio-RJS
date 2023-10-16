@@ -12,6 +12,7 @@
   position: sticky;
   top: 0;
   background: #101630;
+  z-index: 1000;
 }
 
 .toggle-button {
@@ -36,7 +37,6 @@
   top: 10px;
   right: 10px;
   display: none;
-
 }
 
 .navegation {

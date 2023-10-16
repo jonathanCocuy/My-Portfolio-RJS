@@ -13,7 +13,9 @@ const Experience = () => {
   return (
     <main className="container-experience">
       <h1 className="title-principal">Experiencia</h1>
-      <h2 className="subtitle-principal">Tecnologías que utilizo actualmente</h2>
+      <h2 className="subtitle-principal">
+        Tecnologías que utilizo actualmente
+      </h2>
       <div className="container-principal-experience">
         <section>
           <img src={HTMLIcon} width={100} alt="HTML"></img>
@@ -47,6 +49,35 @@ const Experience = () => {
           <img src={ReactIcon} width={100} alt="React"></img>
           <h3 className="title">React JS</h3>
         </section>
+      </div>
+      <div className="work-experience">
+        <h2 className="title-work-experience">Experiencia Laboral</h2> 
+        <p className="description-work-experience">
+          <h3 className="company-work-experience">Vale +</h3> 
+          Tuve la oportunidad de trabajar en una empresa como desarrollador
+          Front-End como aprendiz del SENA, durante seis meses, en los cuales
+          pude aprender mucho, donde trabaje en equipo ayudando de la mejor
+          manera, apoyando distintas areas de las cuales obtuve un gran
+          conocimiento.
+          <p>
+            <span className="span-period-work">Periodo laborado:</span> 18 de Enero del 2023 - 18 de Julio
+            del 2023
+          </p> 
+          <p>
+            <span className="span-period-work">Funciones realizadas:</span>
+          </p>
+          <ul className="list-functions">
+            <li>Solución de Bugs en Angular.</li>
+            <li>
+              Desarrollos de funcionalidad y estilos con Angular, TypeScript y
+              CSS.
+            </li>
+            <li>
+              Cargue de insumos con SQL Server, Wordpress, AWS (S3) y Flipsnack.
+            </li>
+            <li>Documentaciones en Word.</li>
+          </ul>
+        </p>
       </div>
     </main>
   );

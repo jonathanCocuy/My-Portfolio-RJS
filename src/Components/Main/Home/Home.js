@@ -10,6 +10,7 @@ const Home = () => {
         DESARROLLADOR DE <br />
         <span>SOFTWARE</span>&nbsp;<span className="span-frontend">FRONT-END</span>
       </h1>
+      <h3 className="subtitle-home">Bienvenido a mi portafolio web, aquí podrás ver mis proyectos y mis habilidades. </h3>
     </div>
   );
 }

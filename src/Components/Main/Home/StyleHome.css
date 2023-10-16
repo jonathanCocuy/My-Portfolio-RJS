@@ -33,6 +33,13 @@
   z-index: 1000;
 }
 
+.subtitle-home {
+  padding-top: 50px;
+  color: rgb(168, 168, 168);
+  font-size: 25px;
+  font-weight: lighter;
+}
+
 @media (max-width: 500px) {
   .img-home {
     display: block;
@@ -42,9 +49,15 @@
   }
 
   .div-home {
+    padding-top: 150px;
     width: 100%;
     font-size: 15px;
     gap: 50px;
+  }
 
+  .subtitle-home {
+    text-align: center;
+    font-size: 22px;
+    padding-top: 10px;
   }
 }

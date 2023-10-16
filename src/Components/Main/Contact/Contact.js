@@ -39,12 +39,12 @@ const Contact = () => {
   const WhatsApp = () => {
     const MessageInput = encodeURIComponent(WhatsAppMessage);
 
-    if (WhatsAppMessage.trim() === '') {
+    if (WhatsAppMessage.trim() === "") {
       sweetAlert("Oops...", "Debes completar el campo", "error");
-            return;
+      return;
     }
     const WhatsAppLink = `https://api.whatsapp.com/send?phone=3058754602&text=${MessageInput}`;
-    window.open(WhatsAppLink, "_blank");
+    window.open(WhatsAppLink);
     setWhatsAppMessage("");
   };
 
@@ -56,7 +56,7 @@ const Contact = () => {
           <div className="container-contact">
             <h1 className="write-title">Escribeme a mi Correo</h1>
             <img
-            className="img-form"
+              className="img-form"
               src="https://images.prismic.io/vtiger-website/1a36a136-5f88-4313-8dd4-a6fc2c397893_gmail+logo.png?auto=compress,format"
               width={"50"}
               alt="Gmail Logo"
@@ -105,11 +105,11 @@ const Contact = () => {
           </div>
         </form>
 
-        <div className="container-whatsapp" >
+        <div className="container-whatsapp">
           <div className="container-whatsapp-input">
             <h1 className="write-title">Escribeme a mi WhatsApp</h1>
             <img
-            className="img-whatsapp"
+              className="img-whatsapp"
               src="https://www.joseivanaguilar.com/wp-content/uploads/2023/05/WhatsApp.svg_.png"
               width={"50"}
               alt="WhatsApp Logo"
@@ -125,7 +125,9 @@ const Contact = () => {
             />
           </div>
           <div>
-            <button className="button-whatsapp" onClick={WhatsApp}>Enviar</button>
+            <button className="button-whatsapp" onClick={WhatsApp}>
+              Enviar
+            </button>
           </div>
         </div>
       </div>
