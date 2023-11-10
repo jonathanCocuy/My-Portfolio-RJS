@@ -35,7 +35,7 @@ const Projects = () => {
             </p>
           </div>
           <div>
-            <a href={linkProject1} target="_blank">
+            <a href={linkProject1} target="_blank" rel="noreferrer">
               <img
                 className="img-projects"
                 src={PesoPlaneta}
@@ -49,7 +49,7 @@ const Projects = () => {
         {/* Proyecto 2 */}
         <section className="section-projects" id="section-project-2">
           <div>
-            <a href={linkProject2} target="_blank">
+            <a href={linkProject2} target="_blank" rel="noreferrer">
               <img
                 className="img-projects"
                 src={Counter}
@@ -86,7 +86,7 @@ const Projects = () => {
             </p>
           </div>
           <div>
-            <a href={linkProject3} target="_blank">
+            <a href={linkProject3} target="_blank" rel="noreferrer">
               <img
                 className="img-projects"
                 src={Minicalculator}
